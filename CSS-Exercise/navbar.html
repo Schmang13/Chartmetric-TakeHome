@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./navbar.css">
 </head>
 <body>
-  <header>
-    <div class="navbar">
+    <nav>
+      <!-- This div contains the logo and company name -->
       <div class="logo">
         <img class="chartmetric-logo"
           src="./static/CM_logo-icon.svg"
@@ -18,27 +18,31 @@
         >
         <h1>Chartmetric</h1>
       </div>
+      <!-- This div contains the search bar and icons -->
       <div class="navigation">
         <form class="search">
-          <input class="search-bar"
+          <input name="search-bar"
+            class="search-bar"
             type="search"
             placeholder='Search ("/" for hotkey)'
           />
         </form>
+        <!-- Pulled icons in and added them to the static folder -->
         <div class="icons">
           <img class="megaphone" 
-            src="https://pics.freeicons.io/uploads/icons/png/6698746891578982968-512.png"
+            src="./static/megaphone.png"
             alt="Megaphone Icon"
           >
           <img class="bell"
-            src="https://pics.freeicons.io/uploads/icons/png/19903299871596026813-512.png"
+            src="./static/bell.png"
             alt="Bell Icon"
           >
           <div class="hamburger-menu">
             <img class="hamburger-icon"
-              src="https://pics.freeicons.io/uploads/icons/png/3789432131673628290-512.png"
-              alt="Three Line Icon"
+              src="./static/hamburger.png"
+              alt="Hamburger Menu Icon"
             >
+            <!-- Template drop down menu  -->
             <div class="dropdown-content">
               <a href="#">Account</a>
               <a href="#">Settings</a>
@@ -47,7 +51,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </nav>
 </body>
 </html>
