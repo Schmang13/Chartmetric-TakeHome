@@ -1,0 +1,132 @@
+/* reset styles to prevent inconsistencies between browsers */
+nav, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: #1d2b38;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.chartmetric-logo{
+  padding-right: 8px;
+}
+
+h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  padding-right: 15px;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+form.search{
+  width: 100%;
+}
+
+input.search-bar{
+  display: block;
+  border: none;
+  border-radius: 3px;
+  height: 24px;
+  width: 100%;
+  padding-left: 35px;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 110px;
+}
+.megaphone{
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bell{
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.hamburger-menu{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-icon{
+  filter: invert(100%);
+  width: 20px;
+  height: 16px;
+}
+
+/* Just added a little functionality to the hamburger menu for fun */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: visible;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 98px;
+  right: 10px;
+}
+
+.dropdown-content a {
+  color: #1d2b38;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* hover effects to display the dropdown menu and add a hover effect to the list items */
+.dropdown-content a:hover {background-color: #ddd;}
+
+.hamburger-menu:hover .dropdown-content {display: block;}
+  
+/* Chose 480px to capture all phone screen sizes. 
+This removes the Chartmetric name so that the search bar has more space */
+@media (max-width: 480px) {
+  h1{
+    display: none;
+  }
+
+  .logo{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navigation{
+    width: 100%;
+  }
+
+  .icons{
+    padding-right: 10px;
+  }
+}
